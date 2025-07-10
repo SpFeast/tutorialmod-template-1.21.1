@@ -1,5 +1,6 @@
 package com.spfeast.tutorialmod;
 
+import com.spfeast.tutorialmod.item.ModItemGroups;
 import com.spfeast.tutorialmod.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 
@@ -21,6 +22,8 @@ public class TutorialMod implements ModInitializer {
 		// Proceed with mild caution.
 
 		ModItems.registerModItems();
+		ModItemGroups.registerModItemGroups();
+
 		LOGGER.info("Hello Fabric world!");
 	}
 }
